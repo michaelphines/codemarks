@@ -1,17 +1,6 @@
 @import "bourbon"
 
-#banner
-  position: absolute
-  top: ($header-height + $header-extra + $header-box)
-  width: 100%
-  left: 0
-  height: 330px
-  z-index: -1
-  @include radial_gradient(50% 65%, ellipse cover, lighten($c2, 10%), $c2 45%)
-
-
 #banner_text
-  height: 305px
   width: 100%
   color: $grey
   text-align: center
@@ -55,7 +44,7 @@
 
     a
       color: $c3
-    
+
     h3
       margin-bottom: 10px
     h4
@@ -78,8 +67,16 @@
       margin-bottom: 10px
 
 #about
+  position: absolute
+  height: 100%
+  width: 100%
+  left: 0
+  text-align: center
+  @include radial_gradient(50% 65%, ellipse cover, lighten($c2, 10%), $c2 45%)
+
   #banner_text
-    height: 305px
+    margin: auto 0
+    width: 960px
     h2
       padding-bottom: 15px
 
@@ -105,7 +102,7 @@
 
   #site_explanation
     margin: 20px auto
-    
+
       padding-bottom: 15px
       text-align: center
       font-size: 30px
@@ -137,7 +134,7 @@
 
     a
       color: $c3
-    
+
     h3
       margin-bottom: 10px
 
